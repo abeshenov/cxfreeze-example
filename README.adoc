@@ -1,0 +1,25 @@
+= Simple example of cx_Freeze
+
+- link:app.py[`app.py`] is an example app which uses extra packages
+(`numpy` in this case).
+
+- `requirements.txt` contains a list of dependencies, including `cx_Freeze`.
+
+- `Dockerfile` builds an executable with `cxfreeze`.
+
+To do that manually, first run
+
+[source, bash]
+----
+pip install --no-cache-dir --requirement requirements.txt
+----
+
+Then
+
+[source, bash]
+----
+cxfreeze app.py
+----
+
+The result is a folder `build/exe.linux-x86_64-<Python-version>/`.
+It contains an executable binary `app` and a lot of dependencies in the `lib` dir.
