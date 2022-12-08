@@ -3,9 +3,9 @@
 - link:app.py[`app.py`] is an example app which uses extra packages
 (`numpy` in this case).
 
-- `requirements.txt` contains a list of dependencies, including `cx_Freeze`.
+- link:requirements.txt[`requirements.txt`] contains a list of dependencies, including `cx_Freeze`.
 
-- `Dockerfile` builds an executable with `cxfreeze`.
+- link:Dockerfile[`Dockerfile`] builds an executable with `cxfreeze`.
 
 To do that manually, first run
 
