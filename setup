@@ -1,0 +1,8 @@
+from cx_Freeze import setup, Executable
+
+setup(
+    name="Sample frozen app",
+    version="0.1",
+    description="Bla-bla-bla",
+    executables=[Executable("app.py")]
+)
